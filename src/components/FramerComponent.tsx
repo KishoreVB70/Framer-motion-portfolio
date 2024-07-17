@@ -2,6 +2,7 @@
 import FadeIn from "@/components/FadeIn";
 import { motion } from "framer-motion"; 
 import ScaleAndRotate from "./ScaleAndRotate";
+import HoverButton from "./HoverButton";
 
 export default function FramerComponent() {
   const parentVariants = {
@@ -32,7 +33,7 @@ export default function FramerComponent() {
     >
       <FadeIn childVariants={childVariants} />
       <ScaleAndRotate childVariants={childVariants} />
-      <motion.div variants={childVariants} className="bg-slate-800 aspect-square rounded-lg flex items-center justify-center gap-10" ></motion.div>
+      <HoverButton childVariants={childVariants} />
       <motion.div variants={childVariants} className="bg-slate-800 aspect-square rounded-lg flex items-center justify-center gap-10" ></motion.div>
       <motion.div variants={childVariants} className="bg-slate-800 aspect-square rounded-lg flex items-center justify-center gap-10" ></motion.div>
       <motion.div variants={childVariants} className="bg-slate-800 aspect-square rounded-lg flex items-center justify-center gap-10" ></motion.div>
