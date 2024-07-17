@@ -30,8 +30,8 @@ const SVG = ({childVariants}: any) => {
               initial="hidden"
               animate="visible"
               transition={{
-                default: {duration: 2, delay: 1, repeat: Infinity, repeatType: "reverse", repeatDelay:0.5},
-                fill: {duration:2, delay:2, repeat: Infinity, repeatType: "reverse", repeatDelay:0.5}
+                default: {duration: 2, delay: 1, repeat: Infinity, repeatType: "reverse", repeatDelay:2},
+                fill: {duration:2, delay:3, repeat: Infinity, repeatType: "reverse", repeatDelay:0}
               }}
             />
         </motion.svg>
