@@ -5,6 +5,7 @@ import ScaleAndRotate from "./ScaleAndRotate";
 import HoverButton from "./HoverButton";
 import DragAndDrop from "./DragAndDrop";
 import ScrollProgress from "./ScrollProgress";
+import SVG from "./SVG";
 
 export default function FramerComponent() {
   const parentVariants = {
@@ -38,7 +39,8 @@ export default function FramerComponent() {
       <HoverButton childVariants={childVariants} />
       <DragAndDrop childVariants={childVariants} />
       <ScrollProgress childVariants={childVariants} />
-      <motion.div variants={childVariants} className="bg-slate-800 aspect-square rounded-lg flex items-center justify-center gap-10" ></motion.div>
+      <SVG childVariants={childVariants}/>
+      
     </motion.section>
   );
 }
