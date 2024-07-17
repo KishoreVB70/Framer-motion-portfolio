@@ -9,7 +9,7 @@ export default function Home() {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.25,
+        staggerChildren: 0.15,
       }
     }
   }
@@ -29,12 +29,23 @@ export default function Home() {
       initial="hidden"
       animate="show"
     >
-      <div className="bg-slate-800 aspect-square rounded-lg flex items-center justify-center gap-10" ></div>
-      <div className="bg-slate-800 aspect-square rounded-lg flex items-center justify-center gap-10" ></div>
-      <div className="bg-slate-800 aspect-square rounded-lg flex items-center justify-center gap-10" ></div>
-      <div className="bg-slate-800 aspect-square rounded-lg flex items-center justify-center gap-10" ></div>
-      <div className="bg-slate-800 aspect-square rounded-lg flex items-center justify-center gap-10" ></div>
-      <div className="bg-slate-800 aspect-square rounded-lg flex items-center justify-center gap-10" ></div>
+      <motion.div variants={childVariants} className="bg-slate-800 aspect-square rounded-lg flex items-center justify-center gap-10" >
+        <motion.div className="w-20 h-20 bg-stone-100 rounded-lg"
+          initial={{opacity: 0, y: 100}}
+          animate={{opacity: 1, y: 0}}
+          transition={{duration: 0.7, ease: "easeIn", delay:0.2}}
+        ></motion.div>
+        <motion.div className="w-20 h-20 bg-stone-100 rounded-full"
+          initial={{opacity: 0, y: -100}}
+          animate={{opacity: 1, y: 0}}
+          transition={{duration:0.7, ease: "easeIn", delay:0.2}}
+        ></motion.div>
+      </motion.div>
+      <motion.div variants={childVariants} className="bg-slate-800 aspect-square rounded-lg flex items-center justify-center gap-10" ></motion.div>
+      <motion.div variants={childVariants} className="bg-slate-800 aspect-square rounded-lg flex items-center justify-center gap-10" ></motion.div>
+      <motion.div variants={childVariants} className="bg-slate-800 aspect-square rounded-lg flex items-center justify-center gap-10" ></motion.div>
+      <motion.div variants={childVariants} className="bg-slate-800 aspect-square rounded-lg flex items-center justify-center gap-10" ></motion.div>
+      <motion.div variants={childVariants} className="bg-slate-800 aspect-square rounded-lg flex items-center justify-center gap-10" ></motion.div>
     </motion.section>
     </div>
 
